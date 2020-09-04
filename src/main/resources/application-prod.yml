@@ -1,0 +1,23 @@
+server: 
+  port: 8088
+  servlet:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
+    context-path: /
+
+spring:
+  servlet:
+    multipart:
+      max-request-size: 100MB
+      max-file-size: 100MB 
+      enabled: true
+  application:
+    name: projects-ocr                          # 指定服务名称  SERVICE-CORE
+    
+ocr: 
+  baiduOCR: 
+    appId: 22541606
+    apiKey: UoZDXdl6B9rb2EkmoSsZ6IXR
+    secretKey: lWwATE7olZj7Rjx51eFlpcPqgNj2ZTkC    
